@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    font-family: 'plume_bold' !important;
+    font-size: 1.03em !important;
+}
+
+.pure-g {
+    letter-spacing: 0 !important;
+    font-family: 'plume_bold' !important;
+}
+
+@font-face {
+    font-family: 'plume_bold';
+    src: url('../fonts/plume_dama_bold-webfont.woff2') format("woff2"), url('../fonts/plume_dama_bold-webfont.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../fonts/proxima-nova-semibold-webfont.woff2') format("woff2"), url('../fonts/proxima-nova-semibold-webfont.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_regular';
+    src: url('../fonts/proxima-nova-regular-webfont.woff2') format("woff2"), url('../fonts/proxima-nova-regular-webfont.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima-nova.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_bold';
+    src: url('../fonts/proxima-nova-bold-webfont.woff2') format("woff2"), url('proxima-nova-bold-webfont.woff.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novablack';
+  src: url('../fonts/proxima-nova-black-webfont.woff2') format("woff2"), url('../fonts/proxima-nova-black-webfont.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('../fonts/proxima-nova-bold-webfont.woff2') format("woff2"), url('../fonts/proxima-nova-bold-webfont.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'plume_damaregular';
+  src: url('../fonts/plume_dama_regular-webfont.woff2') format("woff2"), url('../fonts/plume_dama_regular-webfont.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

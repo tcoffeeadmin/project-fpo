@@ -1,0 +1,102 @@
+.enquiry-form {
+    text-align: left;
+    font-family: 'plume_bold';
+    background: #fff;
+    padding: .5em 1.2em 0 1em;
+    -webkit-box-shadow: 0px 0px 4px rgba(191, 191, 193, 0.42);
+    -moz-box-shadow: 0px 0px 4px rgba(191, 191, 193, 0.42);
+    box-shadow: 0px 0px 4px rgba(191, 191, 193, 0.42);
+    legend {
+        border: none;
+        font-size: 1.200em;
+        color: #555555;
+        font-family: 'plume_bold' !important;
+    }
+    label {
+        text-align: left;
+        font-family: 'plume_bold';
+        color: #485da7;
+        
+    }
+    input[type="text"] {
+        border-color: #6d6e71 !important;
+        border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        box-shadow: none;
+    }
+}
+
+[type="email"], [type="tel"], select {
+    border-color: #6d6e71 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    box-shadow: none;
+}
+
+.enquiry-form {
+    button {
+        background: #f5bd48;
+        color: #485da7;
+        font-size: 1.200em;
+        font-family: 'plume_bold' !important;
+        margin-top: .5em;
+        width: 100%;
+        border-radius: .2em;
+        -webkit-border-radius: .2em;
+        -moz-border-radius: .2em;
+        -webkit-box-shadow: 3px 2px 0px 0px rgba(109, 110, 113, 1);
+        -moz-box-shadow: 3px 2px 0px 0px rgba(109, 110, 113, 1);
+        box-shadow: 3px 2px 0px 0px rgba(109, 110, 113, 1);
+    }
+    select {
+        margin: 0;
+    }
+    input[type="text"] {
+        color: #6d6e71;
+        font-size: 1em;
+        text-transform: capitalize;
+        font-family: 'proxima_nova_regular';
+    }
+}
+
+[type="email"], [type="tel"], select::placeholder {
+    color: #6d6e71;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-family: 'proxima_nova_regular';
+}
+
+.enquiry-form input[type="text"], [type="email"], [type="tel"], select::-webkit-input-placeholder, .enquiry-form input[type="text"], [type="email"], [type="tel"], select::-moz-placeholder, .enquiry-form input[type="text"], [type="email"], [type="tel"], select::-ms-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #6d6e71;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-family: 'proxima_nova_regular';
+}
+
+.enquiry-form select {
+    color: #6d6e71 !important;
+    font-family: 'proxima_nova_regular';
+}
+
+.privacy-info {
+    p {
+        margin: 0;
+        margin-top: 1em;
+        font-size: .8em !important;
+        text-align: center;
+        color: #6d6e71;
+        font-family: proxima_nova;
+    }
+    img {
+        display: inline;
+        width: 10px;
+    }
+}
+
+.enquiry-form fieldset {
+    margin: 0;
+    padding-bottom: 1em;
+}
