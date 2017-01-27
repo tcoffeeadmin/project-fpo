@@ -2692,6 +2692,7 @@ html, body {
     position: relative;
     margin-left: 0 !important;
     color: #485da7;
+    float:left;
   }
   /* line 363, C:/Users/Midhun Jose/Desktop/fpo/src/scss/default/_wrappers.scss */
   .hero-intro p {
