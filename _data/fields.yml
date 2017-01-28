@@ -1,0 +1,31 @@
+dob:
+  name: 'dob'
+  placeholder: 'Date of Birth (55+ only)'
+  label: 'Date of Birth: (55+ only)'
+  error: 'Please enter your date of birth'   
+postcode:
+  name: 'postcode'
+  placeholder: 'Postcode e.g. LS21 3JP'
+  label: 'Postcode:'
+  error: 'Please enter a valid postcode'
+ 
+telephone_data8:
+  name: 'telephone_data8'
+  placeholder: 'e.g 077777383838'
+  label: 'Telephone no:'
+  error: 'Please enter your telephone number'      
+email:
+  name: 'email'
+  placeholder: 'e.g example@example.com'
+  label: 'Email address:'
+  error: 'Please enter your email address'
+firstname:
+  name: 'firstname'
+  placeholder: 'First name'
+  label: 'First name'
+  error: 'Please enter your first name'
+lastname:
+  name: 'lastname'
+  placeholder: 'Surname'
+  label: 'Surname'
+  error: 'Please enter your surname'

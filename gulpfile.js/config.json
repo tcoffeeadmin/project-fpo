@@ -1,0 +1,79 @@
+{
+  "root": {
+    "src": "./src",
+    "dest": "./assets"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "startPath" : "_site",
+      "server": {
+        "baseDir": "./"
+      }
+    },
+
+    "static": {
+      "src": "static",
+      "dest": "static"
+    },
+
+    "js": {
+      "src": "javascripts",
+      "dest": "javascripts",
+      "entries": {
+        "app": ["./app.js"]
+      },
+      "extensions": ["js", "json"],
+      "babel": {
+        "presets": ["es2015", "stage-1"],
+        "plugins": []
+      },
+      "extractSharedJs": false
+    },
+    "css": {
+      "src": "scss",
+      "dest": "css",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true,
+        "includePaths": [
+          "./node_modules/normalize.css",
+          "./node_modules/bourbon/app/assets/stylesheets",
+          "./node_modules/include-media/dist/",
+          "./node_modules/slick-carousel/"          
+        ]
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "html": {
+      "src": "../../",
+      "dest": "./",
+      "extensions": ["html", "json", "yml"],
+      "excludeFolders": ""
+    },
+
+    "copy": {
+      "src": "html",
+      "dest": "./"
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "images",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "svgSprite": {
+      "src": "icons",
+      "dest": "images",
+      "extensions": ["svg"]
+    },
+
+    "production" : {
+      "rev": false
+    }
+  }
+}

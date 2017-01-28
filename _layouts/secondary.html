@@ -1,0 +1,71 @@
+{% include base.html %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!--Optimizely-->
+   
+    <!--/Optimizely-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ page.head.meta_desc }}" />
+    <title>{{ page.head.title }}</title>
+
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!--Typography.com-->
+   
+    <!--/Typography.com-->
+
+    <!--Fontastic-->
+    
+    <!--/Fontastic-->
+
+    <!--GTM-->
+    
+    <!--/GTM-->
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/assets/static/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/static/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/static/manifest.json">
+    <link rel="mask-icon" href="/assets/static/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/static/favicon.ico">
+    <meta name="msapplication-config" content="/assets/static/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="pg-{{ page.layout }} {% if page.category_page.name %}cat-{{ page.category_page.name }}{% endif %}{% if page.product_name %}prod-{{ page.product_name }}{% endif %}">
+
+  
+        {% include secondary-header.html %}
+       
+     
+
+
+
+      {{ content }}
+    
+    {% include secondary-footer.html %}
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="/assets/javascripts/app.js"></script>
+	 <script src="/assets/javascripts/frontend.js"></script>
+	 <script src="/assets/javascripts/remodal.js"></script>
+    <script type="text/javascript">
+    piAId = '218582';
+    piCId = '2842';
+
+    (function() {
+      function async_load(){
+        var s = document.createElement('script'); s.type = 'text/javascript';
+        s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+        var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+      }
+      if(window.attachEvent) { window.attachEvent('onload', async_load); }
+      else { window.addEventListener('load', async_load, false); }
+    })();
+    </script>
+  </body>
+</html>
