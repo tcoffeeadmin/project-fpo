@@ -1,0 +1,18 @@
+# Site settings
+version: 3.0.3
+permalink: pretty
+#baseurl: /_site
+
+# Where things are
+#source:       ./_site
+#destination:  ./_site/pages
+#
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "src"]
+
+collections:
+  business-finance:
+    output: true
+    name: Business Finance
+    permalink: :collection/:path/
+    desktop_nav_label: Example

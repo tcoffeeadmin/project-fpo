@@ -1,0 +1,22 @@
+
+.pure-g-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .pure-g-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .pure-g-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .pure-g-container {
+    width: 1199px;
+  }
+}
