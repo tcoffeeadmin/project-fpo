@@ -176,6 +176,22 @@
     }
 }
 
+/*----------------------------------------------
+---------media-screen--min-width-1380px-----------
+-----------------------------------------------*/
+
+@media screen and (min-width: 1380px) {
+.hero-intro {
+    margin-top: 130px;
+}
+.text-wrapper { 
+    top: 60%;  
+}
+.enquiry-form {
+margin-top:5em;
+}
+}
+
 
 
 /*----------------------------------------------
@@ -271,21 +287,7 @@
 
 }
 
-/*----------------------------------------------
----------media-screen--min-width-1380px-----------
------------------------------------------------*/
 
-@media screen and (min-width: 1380px) {
-.hero-intro {
-    margin-top: 130px;
-}
-.text-wrapper { 
-    top: 60%;  
-}
-.enquiry-form {
-margin-top:5em;
-}
-}
 
 /*----------------------------------------------
 ---------media-screen--max-width-768px-----------
