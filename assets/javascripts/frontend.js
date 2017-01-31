@@ -15,7 +15,7 @@ $('#return-to-top').click(function () {      // When arrow is clicked
 });
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+    if ($(this).scrollTop() >= 650) {        // If page is scrolled more than 50px
         $('.fixed-cta').fadeIn(200);    // Fade in the arrow
     } else {
         $('.fixed-cta').fadeOut(200);   // Else fade out the arrow
