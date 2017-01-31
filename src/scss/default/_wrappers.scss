@@ -181,15 +181,15 @@
 -----------------------------------------------*/
 
 @media screen and (min-width:$break-x-large) {
-.hero-intro {
-    margin-top: 130px;
-}
-.text-wrapper { 
-    top: 60%;  
-}
-.enquiry-form {
-margin-top:5em;
-}
+    .hero-intro {
+        margin-top: 130px;
+    }
+    .text-wrapper { 
+        top: 60%;  
+    }
+    .enquiry-form {
+        margin-top:5em;
+    }
 }
 
 
@@ -214,14 +214,14 @@ margin-top:5em;
     .hero-intro p {
         margin-bottom: 1em;
     }
-	.enquiry-form select {
-  padding: .5em .25em;
-    background: url(../images/icons/icon-chevron-down.svg) no-repeat 98% 13px;
-   
-}
-.enquiry-form input[type="text"]{
-      padding: .5em .25em;
-}
+    .enquiry-form select {
+        padding: .5em .25em;
+        background: url(../images/icons/icon-chevron-down.svg) no-repeat 98% 13px;
+
+    }
+    .enquiry-form input[type="text"]{
+        padding: .5em .25em;
+    }
 }
 /*----------------------------------------------
 ---------media-screen--max-width-796px-----------
@@ -296,9 +296,9 @@ margin-top:5em;
     .pm-li-styles {
         display: none !important;
     }
-.border-yellow {
-   border:none;
-}
+    .border-yellow {
+        border:none;
+    }
     .call-now {
         width: auto;
         margin-top: 0;
@@ -432,16 +432,11 @@ margin-top:5em;
         -moz-box-shadow: 3px 2px 0px 0px #6d6e71;
         box-shadow: 3px 2px 0px 0px #6d6e71;
     }
-
-    .footer {
-        border-bottom: 1px solid #f5bd48;
-    }
-
     .foo-btn {
-        padding: .5em 0;
+        padding:.7em 0;
         margin: 0 1em;
+        width:92%;
     }
-
     .enquiry-form {
         border: 1px solid #f5be4a;
     }
@@ -449,6 +444,17 @@ margin-top:5em;
     .call-now a {
         padding-bottom: 0.2em;
     }
+    .fixed-cta{
+        width:100%;
+        background:#fff; 
+        bottom:0;
+        position: fixed;
+        left: 0;
+        z-index: 3;
+        border-top: 2px solid #f5bd48;
+    }
+
+
 }
 /*----------------------------------------------
 ---------media-screen--max-width-412px-----------
@@ -486,10 +492,10 @@ margin-top:5em;
     .statistics-content p, .plan-content p {
         padding: 0 1.8em;
     }
-	.footer-logo img {
-    width: 170px;
-   
-}
+    .footer-logo img {
+        width: 170px;
+
+    }
 
 
 }
