@@ -1,8 +1,13 @@
 .pm-li-styles {
     > li > a {
-        padding: .5em !important;
+        padding: .5em 0 !important;
+        margin:0 .5em; 
         color: #555555;
         border-bottom: 1px solid #555555;
+        &:hover {
+            color: #485da7;   
+            border-color:#f5bc48;
+        }
     }
     margin-left: 3.5%;
     text-transform: capitalize;
