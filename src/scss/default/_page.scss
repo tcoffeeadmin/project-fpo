@@ -1,232 +1,270 @@
 /*Terms and conditions page*/
 .terms-conditions {
- 
-  padding: 50px 182px 35px 182px;
-  letter-spacing: 0;
-  h1 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    width: 100%;
-    font-size: 2.750em;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-  p {
-    color: #555555;
-    font-family: 'proxima_nova_regular';
-    margin-top: 0;
-    letter-spacing: 0.005em;
-    line-height: 22px;
-  }
-  h3 {
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    margin-top: 0;
-    margin-bottom: 0.4em;
-    width: 100%;
-  }
+
+    padding: 50px 182px 35px 182px;
+    letter-spacing: 0;
+    h1 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        width: 100%;
+        font-size: 2.750em;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    p {
+        color: #555555;
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 0;
+        letter-spacing: 0.005em;
+        line-height: 22px;
+    }
+    h3 {
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        margin-top: 0;
+        margin-bottom: 0.4em;
+        width: 100%;
+    }
 }
 /*//Terms and conditions page*/
 
 /*About Us Page*/
 .about-us {
-  padding: 50px 182px;
-  letter-spacing: 0;
-  background-color: #fdf2da;
-  h1 {
-    text-align: center;
-    text-transform: capitalize;
-    color: #485da7;
-    width: 100%;
-    font-size: 2.750em;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
+    padding: 50px 182px;
+    letter-spacing: 0;
+    background-color: #fdf2da;
+    h1 {
+        text-align: center;
+        text-transform: capitalize;
+        color: #485da7;
+        width: 100%;
+        font-size: 2.750em;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .about-content {
-  width: 95%;
-  .about-bold {
-    color: #555555;
-    font-family: 'proxima_nova_rgbold' !important;
-    margin-top: 0;
-    letter-spacing: 0.005em;
-    line-height: 22px;
-    span {
-      font-family: 'proxima_novablack' !important;
+    width: 95%;
+    .about-bold {
+        color: #555555;
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 0;
+        letter-spacing: 0.005em;
+        line-height: 22px;
+        span {
+            font-family: 'proxima_novablack' !important;
+        }
     }
-  }
-  h3 {
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    margin-top: 0;
-    margin-bottom: 0.4em;
-    font-size: 2em;
-    width: 100%;
-  }
-  p {
-    color: #555555;
-    font-family: 'proxima_nova_regular';
-    margin-top: 0;
-    letter-spacing: 0.005em;
-    line-height: 22px;
-    span {
-      font-family: 'proxima_nova_rgbold' !important;
+    h3 {
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        margin-top: 0;
+        margin-bottom: 0.4em;
+        font-size: 2em;
+        width: 100%;
     }
-  }
-  ul li {
-    color: #555555;
-    text-transform: capitalize;
-    font-family: 'proxima_nova_regular';
-    margin-bottom: .3em;
-  }
+    p {
+        color: #555555;
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 0;
+        letter-spacing: 0.005em;
+        line-height: 22px;
+        span {
+            font-family: "proxima-nova",sans-serif;
+            font-style: normal;
+            font-weight: 700;
+        }
+    }
+    ul li {
+        color: #555555;
+        text-transform: capitalize;
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: .3em;
+    }
 }
 /*//About Us Page*/
 
 /*Thank you page*/
 /*Thanks Section*/
 .thanks-section {
-  background-color: #fdf2da;
- 
-  padding: 50px 240px;
-  letter-spacing: 0;
-  border-bottom: 2px solid #485da7;
-  h1 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    width: 100%;
-    font-size: 2.750em;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-  p {
-    text-align: center;
-    color: #555555;
-    font-family: 'proxima_nova_regular';
-    margin-top: 0;
-    letter-spacing: 0.005em;
-    line-height: 22px;
-    width: 85%;
-    margin: 0 auto;
-    margin-bottom: 1em;
-  }
-  h2 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-  h4 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-  }
-  h5 {
-    font-family: 'plume_damaregular';
-    text-align: center;
-    width: 100%;
-    color: #555555;
-    margin-top: 0;
-    font-size: 1.3em;
-    margin-bottom: 15px;
-  }
+    background-color: #fdf2da;
+
+    padding: 50px 240px;
+    letter-spacing: 0;
+    border-bottom: 2px solid #485da7;
+    h1 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        width: 100%;
+        font-size: 2.750em;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    p {
+        text-align: center;
+        color: #555555;
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 0;
+        letter-spacing: 0.005em;
+        line-height: 22px;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    h2 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    h4 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+    }
+    h5 {
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        color: #555555;
+        margin-top: 0;
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
 }
 
 .thanks-mobile-view {
-  display: none !important;
+    display: none !important;
 }
 /*Help Section*/
 .help-section {
-  background-color: #fff;
-  padding: 50px 240px;
-  letter-spacing: 0;
-  h2 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #f5bd48;
-    font-size: 2em;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
-  p {
-    text-align: center;
-    color: #555555;
-    font-family: 'proxima_nova_regular';
-    margin-top: 0;
-    letter-spacing: 0.005em;
-    line-height: 22px;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 1em;
-  }
-  h4 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    font-size: 1.2em;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 12px;
-  }
-  h3 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    font-size: 1.6em;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 20px;
-    span {
-      color: #f5bd48;
+    background-color: #fff;
+    padding: 50px 240px;
+    letter-spacing: 0;
+    h2 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #f5bd48;
+        font-size: 2em;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 25px;
     }
-  }
-  h5 {
-    text-align: center;
-    font-family: 'plume_bold';
-    text-transform: capitalize;
-    color: #485da7;
-    font-size: 1em;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
+    p {
+        text-align: center;
+        color: #555555;
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 0;
+        letter-spacing: 0.005em;
+        line-height: 22px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    h4 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        font-size: 1.2em;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    h3 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        font-size: 1.6em;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+        span {
+            color: #f5bd48;
+        }
+    }
+    h5 {
+        text-align: center;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #485da7;
+        font-size: 1em;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .help-mobile-view {
-  display: none !important;
+    display: none !important;
 }
 /*//Thank you page*/
 
 /*Pop up*/
 
 .popup {
-  padding: 35px 40px;
-  background: #fff;
-  width: 35%;
-  position: relative;
- /* transition: all 5s ease-in-out;
-  height: 24em;*/
+    padding: 35px 40px;
+    background: #fff;
+    width: 35%;
+    position: relative;
+    /* transition: all 5s ease-in-out;
+     height: 24em;*/
 }
 .popup h2 {
-    font-family: 'plume_bold';
+    font-family: "plume",serif;
+    font-style: normal;
+    font-weight: 700;
     text-transform: capitalize;
     color: #485da7;
     margin-top: 0.8em;
@@ -240,8 +278,10 @@
     right: 0;
     transition: all 200ms;
     text-decoration: none;
-	color: #f5bd48;
-    font-family: 'proxima_nova_bold';
+    color: #f5bd48;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 .popup .close span{
     background-color: #f5bd48;
@@ -253,272 +293,276 @@
 
 
 .popup .content {
-  max-height: 20.3em;
-  overflow: auto;
-  padding-right: 8px;
+    max-height: 20.3em;
+    overflow: auto;
+    padding-right: 8px;
 }
 .popup .content p{
-	color: #555555;
-    font-family: 'proxima_nova_regular';
+    color: #555555;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
     margin-top: 0;
     letter-spacing: 0.005em;
     line-height: 22px;
     text-align: left;
 }
 .popup .content h3 {
-    font-family: 'plume_bold';
+    font-family: "plume",serif;
+    font-style: normal;
+    font-weight: 700;
     text-transform: capitalize;
     color: #485da7;
     margin-top: 0;
     margin-bottom: 0.4em;
     width: 100%;
-	text-align: left;
+    text-align: left;
 }
 .popup .content::-webkit-scrollbar
 {
-	width: 7px;
-	background-color: #F5F5F5;
+    width: 7px;
+    background-color: #F5F5F5;
 }
 
 .popup .content::-webkit-scrollbar-thumb
 {
-	border-radius: 10px;
-	background-color: #b7b7b7;
+    border-radius: 10px;
+    background-color: #b7b7b7;
 }
 /*//Pop up*/
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
-/*Terms and conditions page*/
-  .terms-conditions {
-    padding: 50px 100px 35px 100px;
-  }
-/*//Terms and conditions page*/
-/*Thank you page*/
-  .thanks-section, .help-section {
-    padding: 50px 60px;
-  }
-/*//Thank you page*/
-/*About us page*/
-  .about-us {
-    padding: 50px 90px;
-  }
-/*//About us page*/
-/*Pop up*/
-  .popup {
-    width: 40%;
-  }
-/*//Pop up*/
+    /*Terms and conditions page*/
+    .terms-conditions {
+        padding: 50px 100px 35px 100px;
+    }
+    /*//Terms and conditions page*/
+    /*Thank you page*/
+    .thanks-section, .help-section {
+        padding: 50px 60px;
+    }
+    /*//Thank you page*/
+    /*About us page*/
+    .about-us {
+        padding: 50px 90px;
+    }
+    /*//About us page*/
+    /*Pop up*/
+    .popup {
+        width: 40%;
+    }
+    /*//Pop up*/
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
-/*Terms and conditions page*/
-  .terms-conditions {
-    padding: 50px 0px 35px 0px;
-    width: 80%;
-    margin: 0 auto;
-   
-  }
-/*//Terms and conditions page*/
-/*Thank you page*/
-  .thanks-section, .help-section {
-    padding: 50px 60px;
-    p {
-      width: 100%;
+    /*Terms and conditions page*/
+    .terms-conditions {
+        padding: 50px 0px 35px 0px;
+        width: 80%;
+        margin: 0 auto;
+
     }
-  }
-/*//Thank you page*/
-/*About us page*/
-  .about-us {
-    padding: 50px;
-  }
-/*//About us page*/
-/*Pop up*/
-  .popup {
-    width: 50%;
-  }
-/*//Pop up*/
+    /*//Terms and conditions page*/
+    /*Thank you page*/
+    .thanks-section, .help-section {
+        padding: 50px 60px;
+        p {
+            width: 100%;
+        }
+    }
+    /*//Thank you page*/
+    /*About us page*/
+    .about-us {
+        padding: 50px;
+    }
+    /*//About us page*/
+    /*Pop up*/
+    .popup {
+        width: 50%;
+    }
+    /*//Pop up*/
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
-/*Terms and conditions page*/
-  .terms-conditions {
-    padding: 50px 0px 35px 0px;
-    width: 80%;
-    margin: 0 auto;
-   
-    h1 {
-      font-size: 2.7em;
-      width: 100%;
+    /*Terms and conditions page*/
+    .terms-conditions {
+        padding: 50px 0px 35px 0px;
+        width: 80%;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 2.7em;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            width: 100%;
+        }
     }
-    p {
-      text-align: center;
+    /*//Terms and conditions page*/
+    /*Thank you page*/
+    .thanks-section, .help-section {
+        padding: 50px 30px;
+        p {
+            width: 100%;
+        }
     }
-    h3 {
-      text-align: center;
-      width: 100%;
+    .thanks-section {
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 br {
+            display: none;
+        }
     }
-  }
-/*//Terms and conditions page*/
-/*Thank you page*/
-  .thanks-section, .help-section {
-    padding: 50px 30px;
-    p {
-      width: 100%;
+    /*//Thank you page*/
+    /*About us page*/
+    .about-us {
+        padding: 50px;
+        ul {
+            width: 50%;
+            margin-left: 30%;
+        }
     }
-  }
-  .thanks-section {
-    h1 {
-      font-size: 2.2em;
+    .about-us-image {
+        display: none;
     }
-    h2 br {
-      display: none;
+    .about-content {
+        .about-bold, p, h3 {
+            text-align: center;
+        }
     }
-  }
-/*//Thank you page*/
-/*About us page*/
-  .about-us {
-	  padding: 50px;
-	  ul {
-		width: 50%;
-		margin-left: 30%;
-	  }
-	}
-  .about-us-image {
-    display: none;
-  }
-  .about-content {
-    .about-bold, p, h3 {
-      text-align: center;
+    .guaranteed-bold {
+        display: block;
     }
-  }
-  .guaranteed-bold {
-    display: block;
-  }
-/*//About us page*/
-/*Pop up*/
-  .popup {
-    width: 70%;
-  }
-/*//Pop up*/
+    /*//About us page*/
+    /*Pop up*/
+    .popup {
+        width: 70%;
+    }
+    /*//Pop up*/
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-/*Terms and conditions page*/
-  .terms-conditions {
-    padding: 50px 0px 35px 0px;
-    width: 85%;
-    margin: 0 auto;
-  
-    h1 {
-      font-size: 1.5em;
-      width: 100%;
+    /*Terms and conditions page*/
+    .terms-conditions {
+        padding: 50px 0px 35px 0px;
+        width: 85%;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 1.5em;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            width: 100%;
+            font-size: 1em;
+        }
     }
-    p {
-      text-align: center;
+    /*//Terms and conditions page*/
+    /*Thank you page*/
+    .thanks-section {
+        padding: 50px 30px;
+        p {
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
     }
-    h3 {
-      text-align: center;
-      width: 100%;
-      font-size: 1em;
+
+    .help-section {
+        padding: 50px 30px;
+        p {
+            width: 100%;
+        }
     }
-  }
-/*//Terms and conditions page*/
-/*Thank you page*/
-  .thanks-section {
-	  padding: 50px 30px;
-	  p {
-		width: 100%;
-	  }
-	  h1 {
-		font-size: 2.2em;
-	  }
-	}
 
-	.help-section {
-	  padding: 50px 30px;
-	  p {
-		width: 100%;
-	  }
-	}
-
-	.thanks-section {
-	  h2, h4, h5 {
-		display: none;
-	  }
-	}
-
-	.help-section {
-	  h4, h3 {
-		display: none;
-	  }
-	}
-
-	.thanks-mobile-view {
-	  display: block !important;
-	  text-transform: inherit !important;
-	}
-
-	.help-mobile-view {
-	  display: block !important;
-	  text-transform: inherit !important;
-	  img {
-		width: 20px;
-	  }
-	  span {
-		border-bottom: 2px solid #485da7;
-	  }
-	}
-
-	.help-section h5 span {
-	  display: block;
-	}
-/*//Thank you page*/
-/*About us page*/
-   .about-us {
-	  padding: 50px 30px;
-	  ul {
-		width: 50%;
-		margin-left: 20%;
-	  }
-	}
-  .about-us-image {
-    display: none;
-  }
-  .about-content {
-    .about-bold, p, h3 {
-      text-align: center;
+    .thanks-section {
+        h2, h4, h5 {
+            display: none;
+        }
     }
-  }
-  .guaranteed-bold {
-    display: block;
-  }
-/*//About us page*/
-/*Pop up*/
-  .popup {
-    width: 90%;
 
-    .content {
-      height: 16.3em;
+    .help-section {
+        h4, h3 {
+            display: none;
+        }
     }
-  }
-/*//Pop up*/
+
+    .thanks-mobile-view {
+        display: block !important;
+        text-transform: inherit !important;
+    }
+
+    .help-mobile-view {
+        display: block !important;
+        text-transform: inherit !important;
+        img {
+            width: 20px;
+        }
+        span {
+            border-bottom: 2px solid #485da7;
+        }
+    }
+
+    .help-section h5 span {
+        display: block;
+    }
+    /*//Thank you page*/
+    /*About us page*/
+    .about-us {
+        padding: 50px 30px;
+        ul {
+            width: 50%;
+            margin-left: 20%;
+        }
+    }
+    .about-us-image {
+        display: none;
+    }
+    .about-content {
+        .about-bold, p, h3 {
+            text-align: center;
+        }
+    }
+    .guaranteed-bold {
+        display: block;
+    }
+    /*//About us page*/
+    /*Pop up*/
+    .popup {
+        width: 90%;
+
+        .content {
+            height: 16.3em;
+        }
+    }
+    /*//Pop up*/
 }
 
 @media (max-width: 446px) {
-/*Pop up*/
-  .popup {
-    width: 90%;
-    
-    .content {
-      height: 18.3em;
+    /*Pop up*/
+    .popup {
+        width: 90%;
+
+        .content {
+            height: 18.3em;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
     }
-    h2 {
-      font-size: 1.2em;
-    }
-  }
-/*//Pop up*/
+    /*//Pop up*/
 }

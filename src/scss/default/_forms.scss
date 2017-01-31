@@ -1,6 +1,6 @@
 .enquiry-form {
     text-align: left;
-    font-family: 'plume_bold';
+
     background: #fff;
     padding: .5em 1.2em 0 1em;
     -webkit-box-shadow: 0px 0px 4px rgba(191, 191, 193, 0.42);
@@ -10,11 +10,13 @@
         border: none;
         font-size: 1.200em;
         color: #555555;
-        font-family: 'plume_bold' !important;
+
     }
     label {
         text-align: left;
-        font-family: 'plume_bold';
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
         color: #485da7;
 
     }
@@ -38,7 +40,9 @@
         background: #f5bd48;
         color: #485da7;
         font-size: 1.200em;
-        font-family: 'plume_bold' !important;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
         margin-top: .5em;
         width: 100%;
         border-radius: .2em;
@@ -62,7 +66,9 @@
         color: #6d6e71;
         font-size: 1em;
         text-transform: capitalize;
-        font-family: 'proxima_nova_regular';
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
     }
 }
 
@@ -70,18 +76,24 @@
     color: #6d6e71;
     font-size: 1em;
     text-transform: capitalize;
-    font-family: 'proxima_nova_regular';
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 .enquiry-form input[type="text"], [type="email"], [type="tel"], select::-webkit-input-placeholder, .enquiry-form input[type="text"], [type="email"], [type="tel"], select::-moz-placeholder, .enquiry-form input[type="text"], [type="email"], [type="tel"], select::-ms-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #6d6e71;
     font-size: 1em;
     text-transform: capitalize;
-    font-family: 'proxima_nova_regular';
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 .enquiry-form select {
     color: #6d6e71 !important;
-    font-family: 'proxima_nova_regular';
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 .privacy-info {
     p {
@@ -90,7 +102,9 @@
         font-size: .8em !important;
         text-align: center;
         color: #6d6e71;
-        font-family: proxima_nova;
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
     }
     img {
         display: inline;

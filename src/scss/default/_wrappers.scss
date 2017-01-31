@@ -25,7 +25,9 @@
         display: inline;
     }
     span {
-        font-family: 'plume_bold';
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
     }
 }
 
@@ -39,7 +41,9 @@
     margin-left: 2.5em;
     p {
         color: #465ba6;
-        font-family: 'plume_regular';
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 400;
     }
 }
 
@@ -55,7 +59,9 @@
     background: #fdf2da;
     h2 {
         color: #485da7;
-        font-family: 'plume_bold' !important;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
         text-align: center;
     }
 }
@@ -63,12 +69,16 @@
 .plan-content {
     line-height: 1.8;
     p {
-        &:first-child {
-            font-family: 'proxima_nova_bold';
-            color: #555555;
-        }
+
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: #555555;
+
         &:last-child {
-            font-family: 'proxima_nova_regular';
+            font-family: "proxima-nova",sans-serif;
+            font-style: normal;
+            font-weight: 400;
             color: #555555;
         }
     }
@@ -82,7 +92,9 @@
 .plan-statistics {
     padding: 2em 0;
     h2 {
-        font-family: 'plume_bold' !important;
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
         color: #f5bd47;
         text-align: center;
     }
@@ -93,13 +105,19 @@
     margin-left: 3em;
     p {
         &:first-child {
-            font-family: 'proxima_nova_bold';
+            font-family: "proxima-nova",sans-serif;
+            font-style: normal;
+            font-weight: 700;
             color: #555555;
         }
-        font-family: 'proxima_nova_regular';
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
         color: #555555;
         &:last-child {
-            font-family: 'proxima_nova_regular';
+            font-family: "proxima-nova",sans-serif;
+            font-style: normal;
+            font-weight: 400;
             color: #555555;
             font-size: .75em;
         }
@@ -114,7 +132,9 @@
     border-top: 2px solid #485da7;
     padding: 2em 0 .5em 0;
     span {
-        font-family: 'proxima_nova_regular';
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
         font-size: .8em;
         margin-bottom: .8em;
         color: #555555;
@@ -139,13 +159,17 @@
     text-align: center;
     h3 {
         color: #485da7;
-        font-family: 'plume_bold';
+        font-family: "plume",serif;
+        font-style: normal;
+        font-weight: 700;
     }
     p {
         color: #555555;
         padding: 0 2em;
         font-size: 1em;
-        font-family: 'proxima_nova_regular';
+        font-family: "proxima-nova",sans-serif;
+        font-style: normal;
+        font-weight: 400;
     }
 }
 #return-to-top {
