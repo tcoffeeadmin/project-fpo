@@ -17,6 +17,12 @@
         <link rel="shortcut icon" href="/assets/static/favicon.ico">
         <meta name="msapplication-config" content="/assets/static/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+        <!--<![endif]-->
 
     </head>
     <body class="pg-{{ page.layout }} {% if page.category_page.name %}cat-{{ page.category_page.name }}{% endif %}{% if page.product_name %}prod-{{ page.product_name }}{% endif %}">
