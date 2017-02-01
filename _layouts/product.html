@@ -1,5 +1,13 @@
 ---
 layout: default
+images:
+  - image: 'assets/images/icons/icon-circle-lock.svg'
+    title: Fix the costs at today's prices
+  - image: 'assets/images/icons/icon-circle-heart.svg'
+    title: Protect your family
+  - image: 'assets/images/icons/icon-circle-thumbsup.svg'
+    title: Guaranteed acceptance
+logo: 'assets/images/logos.png'    
 ---
 {% include base.html %}
 
@@ -26,9 +34,9 @@ layout: default
 
         <!-- icon-text-section-right-desktop -->
         <div class="pure-u-8-24 text-wrapper hidden-sm">
-          <p><img src="/assets/images/icons/icon-circle-lock.svg" alt="" class="pure-img"><span>Fix the costs at today's prices</span></p>
-          <p><img src="/assets/images/icons/icon-circle-heart.svg" alt="" class="pure-img"><span>Protect your family</span></p>
-          <p><img src="/assets/images/icons/icon-circle-thumbsup.svg" alt="" class="pure-img"><span>Guaranteed acceptance</span></p>
+          {% for item in layout.images %}
+          <p><img src="{{ item.image }}" alt="" class="pure-img"><span>{{ item.title }}</span></p>
+          {% endfor %}
         </div>
       </div> 
     </div>
@@ -39,7 +47,7 @@ layout: default
   <div class="pure-g-container">
     <div class="pure-u-1 partenrs-listing">
       <h3>In association with:</h3>
-      <img src="assets/images/logos.png" class="pure-img" alt="">
+      <img src="{{layout.logo}}" class="pure-img" alt="">
     </div>
     <!-- testimonial -->
     <div class="pure-u-1">
