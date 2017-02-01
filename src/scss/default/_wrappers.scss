@@ -156,6 +156,7 @@
   color: #485da7;
   text-align: center;
   margin-bottom: 1.5em;
+  font-size:36px; 
 }
 
 .services-thumb {
@@ -424,7 +425,7 @@
   }
 
   .hero-intro p {
-    margin-bottom: 1em;
+    margin-bottom: 43px;
   }
 
   .testimonial-content {
@@ -432,7 +433,9 @@
   }
 
   .text-wrapper p {
-    margin-top: 0;
+    margin-top:0;
+    margin-bottom:43px; 
+    width:100%; 
   }
 
   .less-margin {
