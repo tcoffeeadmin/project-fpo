@@ -2,9 +2,9 @@
   text-align: left;
   background: #fff;
   padding: .5em 1.875em 0 1.875em;
-  -webkit-box-shadow: 0px 0px 4px rgba(191, 191, 193, 0.42);
-  -moz-box-shadow: 0px 0px 4px rgba(191, 191, 193, 0.42);
-  box-shadow: 0px 0px 4px rgba(191, 191, 193, 0.42);
+  -webkit-box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
+  -moz-box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
+  box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
   font-size: 1.1em;
 
   legend {
@@ -62,10 +62,11 @@
     margin-top: 0;
     background: url(../images/icons/icon-chevron-down.svg) no-repeat 98% 15px;
     -webkit-appearance: none;
+    font-size: 0.875em;
   }
   input[type="text"] {
     color: #6d6e71;
-    font-size: 1em;
+    font-size: 0.875em;
     text-transform: capitalize;
     font-family: "proxima-nova",sans-serif;
     font-style: normal;
