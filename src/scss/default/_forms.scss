@@ -59,7 +59,7 @@
     }
     select {
         margin-top: 0;
-        background: url(../images/icons/icon-chevron-down.svg) no-repeat 98% 12px;
+        background: url(../images/icons/icon-chevron-down.svg) no-repeat 98% 15px;
         -webkit-appearance: none;
     }
     input[type="text"] {
@@ -93,6 +93,7 @@
     color: #6d6e71 !important;
     font-family: "proxima-nova",sans-serif;
     font-style: normal;
+    height:39.97px; 
     font-weight: 400;
 }
 .privacy-info {
@@ -121,4 +122,5 @@
     margin: 0;
     padding-bottom: 1em;
 }
+
 

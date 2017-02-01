@@ -209,11 +209,11 @@
 -----------------------------------------------*/
 
 @media screen and (min-width:$break-x-large) {
-   
+
     .text-wrapper { 
         top: 50%;  
     }
-    
+
     .hero-section {
         height: 662px;
         background: url(../images/hero-bg-img.jpg);
@@ -492,7 +492,14 @@
     .privacy-info p {
         line-height:1.6; 
     }
-
+    .o-message{
+        width:100%; 
+        margin-top:-6px; 
+    }
+    .drop-down-message .o-message{
+        width:100%; 
+        margin-top:-5px; 
+    }
 }
 /*----------------------------------------------
 ---------media-screen--max-width-412px-----------
