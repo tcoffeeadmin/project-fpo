@@ -62,6 +62,8 @@
     margin-top: 0;
     background: url(../images/icons/icon-chevron-down.svg) no-repeat 98% 15px;
     -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance: none;
     font-size: 0.875em;
   }
   input[type="text"] {
