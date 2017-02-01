@@ -388,7 +388,10 @@
   }
 
   .sc-span {
-    font-family: 'proxima_nova_regular' !important;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-top:6px; 
   }
 
   .testimonial {
@@ -504,10 +507,10 @@
     margin-top:-5px; 
   }
   .hero-intro p {
-   
+
     font-size: 1.1em;
-    
-}
+
+  }
 }
 /*----------------------------------------------
 ---------media-screen--max-width-412px-----------
