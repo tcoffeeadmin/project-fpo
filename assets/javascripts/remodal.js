@@ -1,11 +1,11 @@
 /*
  *  Remodal-pop-up-script
-
+ 
  */
 
-!(function(root, factory) {
+!(function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['jquery'], function($) {
+    define(['jquery'], function ($) {
       return factory(root, $);
     });
   } else if (typeof exports === 'object') {
@@ -13,7 +13,7 @@
   } else {
     factory(root, root.jQuery || root.Zepto);
   }
-})(this, function(global, $) {
+})(this, function (global, $) {
 
   'use strict';
 
@@ -40,11 +40,10 @@
    * @type {String}
    */
   var ANIMATIONSTART_EVENTS = $.map(
-    ['animationstart', 'webkitAnimationStart', 'MSAnimationStart', 'oAnimationStart'],
-
-    function(eventName) {
-      return eventName + '.' + NAMESPACE;
-    }
+          ['animationstart', 'webkitAnimationStart', 'MSAnimationStart', 'oAnimationStart'],
+          function (eventName) {
+            return eventName + '.' + NAMESPACE;
+          }
 
   ).join(' ');
 
@@ -55,11 +54,10 @@
    * @type {String}
    */
   var ANIMATIONEND_EVENTS = $.map(
-    ['animationend', 'webkitAnimationEnd', 'MSAnimationEnd', 'oAnimationEnd'],
-
-    function(eventName) {
-      return eventName + '.' + NAMESPACE;
-    }
+          ['animationend', 'webkitAnimationEnd', 'MSAnimationEnd', 'oAnimationEnd'],
+          function (eventName) {
+            return eventName + '.' + NAMESPACE;
+          }
 
   ).join(' ');
 
@@ -109,14 +107,14 @@
    * @const
    * @type {Boolean}
    */
-  var IS_ANIMATION = (function() {
+  var IS_ANIMATION = (function () {
     var style = document.createElement('div').style;
 
     return style.animationName !== undefined ||
-      style.WebkitAnimationName !== undefined ||
-      style.MozAnimationName !== undefined ||
-      style.msAnimationName !== undefined ||
-      style.OAnimationName !== undefined;
+            style.WebkitAnimationName !== undefined ||
+            style.MozAnimationName !== undefined ||
+            style.msAnimationName !== undefined ||
+            style.OAnimationName !== undefined;
   })();
 
   /**
@@ -149,36 +147,36 @@
    */
   function getAnimationDuration($elem) {
     if (
-      IS_ANIMATION &&
-      $elem.css('animation-name') === 'none' &&
-      $elem.css('-webkit-animation-name') === 'none' &&
-      $elem.css('-moz-animation-name') === 'none' &&
-      $elem.css('-o-animation-name') === 'none' &&
-      $elem.css('-ms-animation-name') === 'none'
-    ) {
+            IS_ANIMATION &&
+            $elem.css('animation-name') === 'none' &&
+            $elem.css('-webkit-animation-name') === 'none' &&
+            $elem.css('-moz-animation-name') === 'none' &&
+            $elem.css('-o-animation-name') === 'none' &&
+            $elem.css('-ms-animation-name') === 'none'
+            ) {
       return 0;
     }
 
     var duration = $elem.css('animation-duration') ||
-      $elem.css('-webkit-animation-duration') ||
-      $elem.css('-moz-animation-duration') ||
-      $elem.css('-o-animation-duration') ||
-      $elem.css('-ms-animation-duration') ||
-      '0s';
+            $elem.css('-webkit-animation-duration') ||
+            $elem.css('-moz-animation-duration') ||
+            $elem.css('-o-animation-duration') ||
+            $elem.css('-ms-animation-duration') ||
+            '0s';
 
     var delay = $elem.css('animation-delay') ||
-      $elem.css('-webkit-animation-delay') ||
-      $elem.css('-moz-animation-delay') ||
-      $elem.css('-o-animation-delay') ||
-      $elem.css('-ms-animation-delay') ||
-      '0s';
+            $elem.css('-webkit-animation-delay') ||
+            $elem.css('-moz-animation-delay') ||
+            $elem.css('-o-animation-delay') ||
+            $elem.css('-ms-animation-delay') ||
+            '0s';
 
     var iterationCount = $elem.css('animation-iteration-count') ||
-      $elem.css('-webkit-animation-iteration-count') ||
-      $elem.css('-moz-animation-iteration-count') ||
-      $elem.css('-o-animation-iteration-count') ||
-      $elem.css('-ms-animation-iteration-count') ||
-      '1';
+            $elem.css('-webkit-animation-iteration-count') ||
+            $elem.css('-moz-animation-iteration-count') ||
+            $elem.css('-o-animation-iteration-count') ||
+            $elem.css('-ms-animation-iteration-count') ||
+            '1';
 
     var max;
     var len;
@@ -299,31 +297,31 @@
 
     var newState = namespacify('is', state);
     var allStates = [namespacify('is', STATES.CLOSING),
-                     namespacify('is', STATES.OPENING),
-                     namespacify('is', STATES.CLOSED),
-                     namespacify('is', STATES.OPENED)].join(' ');
+      namespacify('is', STATES.OPENING),
+      namespacify('is', STATES.CLOSED),
+      namespacify('is', STATES.OPENED)].join(' ');
 
     instance.$bg
-      .removeClass(allStates)
-      .addClass(newState);
+            .removeClass(allStates)
+            .addClass(newState);
 
     instance.$overlay
-      .removeClass(allStates)
-      .addClass(newState);
+            .removeClass(allStates)
+            .addClass(newState);
 
     instance.$wrapper
-      .removeClass(allStates)
-      .addClass(newState);
+            .removeClass(allStates)
+            .addClass(newState);
 
     instance.$modal
-      .removeClass(allStates)
-      .addClass(newState);
+            .removeClass(allStates)
+            .addClass(newState);
 
     instance.state = state;
     !isSilent && instance.$modal.trigger({
       type: state,
       reason: reason
-    }, [{ reason: reason }]);
+    }, [{reason: reason}]);
   }
 
   /**
@@ -335,7 +333,7 @@
   function syncWithAnimation(doBeforeAnimation, doAfterAnimation, instance) {
     var runningAnimationsCount = 0;
 
-    var handleAnimationStart = function(e) {
+    var handleAnimationStart = function (e) {
       if (e.target !== this) {
         return;
       }
@@ -343,7 +341,7 @@
       runningAnimationsCount++;
     };
 
-    var handleAnimationEnd = function(e) {
+    var handleAnimationEnd = function (e) {
       if (e.target !== this) {
         return;
       }
@@ -351,7 +349,7 @@
       if (--runningAnimationsCount === 0) {
 
         // Remove event listeners
-        $.each(['$bg', '$overlay', '$wrapper', '$modal'], function(index, elemName) {
+        $.each(['$bg', '$overlay', '$wrapper', '$modal'], function (index, elemName) {
           instance[elemName].off(ANIMATIONSTART_EVENTS + ' ' + ANIMATIONEND_EVENTS);
         });
 
@@ -359,24 +357,24 @@
       }
     };
 
-    $.each(['$bg', '$overlay', '$wrapper', '$modal'], function(index, elemName) {
+    $.each(['$bg', '$overlay', '$wrapper', '$modal'], function (index, elemName) {
       instance[elemName]
-        .on(ANIMATIONSTART_EVENTS, handleAnimationStart)
-        .on(ANIMATIONEND_EVENTS, handleAnimationEnd);
+              .on(ANIMATIONSTART_EVENTS, handleAnimationStart)
+              .on(ANIMATIONEND_EVENTS, handleAnimationEnd);
     });
 
     doBeforeAnimation();
 
     // If the animation is not supported by a browser or its duration is 0
     if (
-      getAnimationDuration(instance.$bg) === 0 &&
-      getAnimationDuration(instance.$overlay) === 0 &&
-      getAnimationDuration(instance.$wrapper) === 0 &&
-      getAnimationDuration(instance.$modal) === 0
-    ) {
+            getAnimationDuration(instance.$bg) === 0 &&
+            getAnimationDuration(instance.$overlay) === 0 &&
+            getAnimationDuration(instance.$wrapper) === 0 &&
+            getAnimationDuration(instance.$modal) === 0
+            ) {
 
       // Remove event listeners
-      $.each(['$bg', '$overlay', '$wrapper', '$modal'], function(index, elemName) {
+      $.each(['$bg', '$overlay', '$wrapper', '$modal'], function (index, elemName) {
         instance[elemName].off(ANIMATIONSTART_EVENTS + ' ' + ANIMATIONEND_EVENTS);
       });
 
@@ -394,7 +392,7 @@
       return;
     }
 
-    $.each(['$bg', '$overlay', '$wrapper', '$modal'], function(index, elemName) {
+    $.each(['$bg', '$overlay', '$wrapper', '$modal'], function (index, elemName) {
       instance[elemName].off(ANIMATIONSTART_EVENTS + ' ' + ANIMATIONEND_EVENTS);
     });
 
@@ -480,9 +478,10 @@
       // Catch syntax error if your hash is bad
       try {
         $elem = $(
-          '[data-' + PLUGIN_NAME + '-id="' + id + '"]'
-        );
-      } catch (err) {}
+                '[data-' + PLUGIN_NAME + '-id="' + id + '"]'
+                );
+      } catch (err) {
+      }
 
       if ($elem && $elem.length) {
         instance = $[PLUGIN_NAME].lookup[$elem.data(PLUGIN_NAME)];
@@ -524,31 +523,31 @@
     remodal.$bg = $('.' + namespacify('bg')).addClass(namespacify('is', STATES.CLOSED));
 
     remodal.$modal = $modal
-      .addClass(
-        NAMESPACE + ' ' +
-        namespacify('is-initialized') + ' ' +
-        remodal.settings.modifier + ' ' +
-        namespacify('is', STATES.CLOSED))
-      .attr('tabindex', '-1');
+            .addClass(
+                    NAMESPACE + ' ' +
+                    namespacify('is-initialized') + ' ' +
+                    remodal.settings.modifier + ' ' +
+                    namespacify('is', STATES.CLOSED))
+            .attr('tabindex', '-1');
 
     remodal.$wrapper = $('<div>')
-      .addClass(
-        namespacify('wrapper') + ' ' +
-        remodal.settings.modifier + ' ' +
-        namespacify('is', STATES.CLOSED))
-      .hide()
-      .append(remodal.$modal);
+            .addClass(
+                    namespacify('wrapper') + ' ' +
+                    remodal.settings.modifier + ' ' +
+                    namespacify('is', STATES.CLOSED))
+            .hide()
+            .append(remodal.$modal);
     $appendTo.append(remodal.$wrapper);
 
     // Add the event listener for the close button
-    remodal.$wrapper.on('click.' + NAMESPACE, '[data-' + PLUGIN_NAME + '-action="close"]', function(e) {
+    remodal.$wrapper.on('click.' + NAMESPACE, '[data-' + PLUGIN_NAME + '-action="close"]', function (e) {
       e.preventDefault();
 
       remodal.close();
     });
 
     // Add the event listener for the cancel button
-    remodal.$wrapper.on('click.' + NAMESPACE, '[data-' + PLUGIN_NAME + '-action="cancel"]', function(e) {
+    remodal.$wrapper.on('click.' + NAMESPACE, '[data-' + PLUGIN_NAME + '-action="cancel"]', function (e) {
       e.preventDefault();
 
       remodal.$modal.trigger(STATE_CHANGE_REASONS.CANCELLATION);
@@ -559,7 +558,7 @@
     });
 
     // Add the event listener for the confirm button
-    remodal.$wrapper.on('click.' + NAMESPACE, '[data-' + PLUGIN_NAME + '-action="confirm"]', function(e) {
+    remodal.$wrapper.on('click.' + NAMESPACE, '[data-' + PLUGIN_NAME + '-action="confirm"]', function (e) {
       e.preventDefault();
 
       remodal.$modal.trigger(STATE_CHANGE_REASONS.CONFIRMATION);
@@ -570,7 +569,7 @@
     });
 
     // Add the event listener for the overlay
-    remodal.$wrapper.on('click.' + NAMESPACE, function(e) {
+    remodal.$wrapper.on('click.' + NAMESPACE, function (e) {
       var $target = $(e.target);
 
       if (!$target.hasClass(namespacify('wrapper'))) {
@@ -587,7 +586,7 @@
    * Opens a modal window
    * @public
    */
-  Remodal.prototype.open = function() {
+  Remodal.prototype.open = function () {
     var remodal = this;
     var id;
 
@@ -615,15 +614,13 @@
     remodal.$modal.focus();
 
     syncWithAnimation(
-      function() {
-        setState(remodal, STATES.OPENING);
-      },
-
-      function() {
-        setState(remodal, STATES.OPENED);
-      },
-
-      remodal);
+            function () {
+              setState(remodal, STATES.OPENING);
+            },
+            function () {
+              setState(remodal, STATES.OPENED);
+            },
+            remodal);
   };
 
   /**
@@ -631,7 +628,7 @@
    * @public
    * @param {String} reason
    */
-  Remodal.prototype.close = function(reason) {
+  Remodal.prototype.close = function (reason) {
     var remodal = this;
 
     // Check if the animation was completed
@@ -640,28 +637,26 @@
     }
 
     if (
-      remodal.settings.hashTracking &&
-      remodal.$modal.attr('data-' + PLUGIN_NAME + '-id') === location.hash.substr(1)
-    ) {
+            remodal.settings.hashTracking &&
+            remodal.$modal.attr('data-' + PLUGIN_NAME + '-id') === location.hash.substr(1)
+            ) {
       location.hash = '';
       $(window).scrollTop(scrollTop);
     }
 
     syncWithAnimation(
-      function() {
-        setState(remodal, STATES.CLOSING, false, reason);
-      },
+            function () {
+              setState(remodal, STATES.CLOSING, false, reason);
+            },
+            function () {
+              remodal.$bg.removeClass(remodal.settings.modifier);
+              remodal.$overlay.removeClass(remodal.settings.modifier).hide();
+              remodal.$wrapper.hide();
+              unlockScreen();
 
-      function() {
-        remodal.$bg.removeClass(remodal.settings.modifier);
-        remodal.$overlay.removeClass(remodal.settings.modifier).hide();
-        remodal.$wrapper.hide();
-        unlockScreen();
-
-        setState(remodal, STATES.CLOSED, false, reason);
-      },
-
-      remodal);
+              setState(remodal, STATES.CLOSED, false, reason);
+            },
+            remodal);
   };
 
   /**
@@ -669,7 +664,7 @@
    * @public
    * @returns {STATES}
    */
-  Remodal.prototype.getState = function() {
+  Remodal.prototype.getState = function () {
     return this.state;
   };
 
@@ -677,7 +672,7 @@
    * Destroys a modal
    * @public
    */
-  Remodal.prototype.destroy = function() {
+  Remodal.prototype.destroy = function () {
     var lookup = $[PLUGIN_NAME].lookup;
     var instanceCount;
 
@@ -685,17 +680,17 @@
     this.$wrapper.remove();
 
     delete lookup[this.index];
-    instanceCount = $.grep(lookup, function(instance) {
+    instanceCount = $.grep(lookup, function (instance) {
       return !!instance;
     }).length;
 
     if (instanceCount === 0) {
       this.$overlay.remove();
       this.$bg.removeClass(
-        namespacify('is', STATES.CLOSING) + ' ' +
-        namespacify('is', STATES.OPENING) + ' ' +
-        namespacify('is', STATES.CLOSED) + ' ' +
-        namespacify('is', STATES.OPENED));
+              namespacify('is', STATES.CLOSING) + ' ' +
+              namespacify('is', STATES.OPENING) + ' ' +
+              namespacify('is', STATES.CLOSED) + ' ' +
+              namespacify('is', STATES.OPENED));
     }
   };
 
@@ -714,11 +709,11 @@
    * @param {Object} options
    * @returns {JQuery}
    */
-  $.fn[PLUGIN_NAME] = function(opts) {
+  $.fn[PLUGIN_NAME] = function (opts) {
     var instance;
     var $elem;
 
-    this.each(function(index, elem) {
+    this.each(function (index, elem) {
       $elem = $(elem);
 
       if ($elem.data(PLUGIN_NAME) == null) {
@@ -726,9 +721,9 @@
         $elem.data(PLUGIN_NAME, instance.index);
 
         if (
-          instance.settings.hashTracking &&
-          $elem.attr('data-' + PLUGIN_NAME + '-id') === location.hash.substr(1)
-        ) {
+                instance.settings.hashTracking &&
+                $elem.attr('data-' + PLUGIN_NAME + '-id') === location.hash.substr(1)
+                ) {
           instance.open();
         }
       } else {
@@ -739,10 +734,10 @@
     return instance;
   };
 
-  $(document).ready(function() {
+  $(document).ready(function () {
 
     // data-remodal-target opens a modal window with the special Id
-    $(document).on('click', '[data-' + PLUGIN_NAME + '-target]', function(e) {
+    $(document).on('click', '[data-' + PLUGIN_NAME + '-target]', function (e) {
       e.preventDefault();
 
       var elem = e.currentTarget;
@@ -755,7 +750,7 @@
     // Auto initialization of modal windows
     // They should have the 'remodal' class attribute
     // Also you can write the `data-remodal-options` attribute to pass params into the modal
-    $(document).find('.' + NAMESPACE).each(function(i, container) {
+    $(document).find('.' + NAMESPACE).each(function (i, container) {
       var $container = $(container);
       var options = $container.data(PLUGIN_NAME + '-options');
 
@@ -769,7 +764,7 @@
     });
 
     // Handles the keydown event
-    $(document).on('keydown.' + NAMESPACE, function(e) {
+    $(document).on('keydown.' + NAMESPACE, function (e) {
       if (current && current.settings.closeOnEscape && current.state === STATES.OPENED && e.keyCode === 27) {
         current.close();
       }
