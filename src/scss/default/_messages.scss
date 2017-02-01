@@ -1,27 +1,27 @@
 .o-message {
-    padding:.25em .5em;
-    text-align: left;
-     margin:0; 
-    margin-top: -5px;
-    box-sizing: border-box;
-    display: block;
-    width:95.85%; 
-   
+  padding:.25em .5em;
+  text-align: left;
+  margin:0; 
+  margin-top: -5px;
+  box-sizing: border-box;
+  display: block;
+  width:95.85%; 
+
 }
 .o-message--alert {
-    font-weight: bold;
-    color: #fff;
-    font-family: "plume",serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 7.5px;
-    font-size: 0.75rem;
-    background:#da233b; 
+  font-weight: bold;
+  color: #fff;
+  font-family: "plume",serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.5px;
+  font-size: 0.75rem;
+  background:#da233b; 
 }
 .field-error{
-   background-color: rgba(233, 50, 45, 0.2) !important;
+  background-color: rgba(233, 50, 45, 0.2) !important;
 }
 
 .drop-down-message .o-message{
-     width:95%; 
+  width:95%; 
 }

@@ -1,59 +1,59 @@
 .pm-li-styles {
-    > li > a {
-        padding: .5em 0 !important;
-        margin:0 .5em; 
-        color: #555555;
-        border-bottom: 1px solid #555555;
-        &:hover {
-            color: #485da7;   
-            border-color:#f5bc48;
-        }
+  > li > a {
+    padding: .5em 0 !important;
+    margin:0 .5em; 
+    color: #555555;
+    border-bottom: 1px solid #555555;
+    &:hover {
+      color: #485da7;   
+      border-color:#f5bc48;
     }
-    margin-left: 3.5%;
-    text-transform: capitalize;
-    li {
-        margin-right: 1em;
-        .pure-menu-link {
-            &:hover, &:focus {
-                background: none;
-            }
-        }
+  }
+  margin-left: 3.5%;
+  text-transform: capitalize;
+  li {
+    margin-right: 1em;
+    .pure-menu-link {
+      &:hover, &:focus {
+        background: none;
+      }
     }
-    .pure-menu-item {
-        vertical-align: bottom !important;
-    }
+  }
+  .pure-menu-item {
+    vertical-align: bottom !important;
+  }
 }
 
 .active a {
-    color: #000 !important;
-    border-bottom: 1px solid #000 !important;
+  color: #000 !important;
+  border-bottom: 1px solid #000 !important;
 }
 
 .pure-menu-heading img {
-    width: 230px;
-    height: auto;
+  width: 230px;
+  height: auto;
 }
 
 .pm-navigation {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 
 .pm-contact-no {
-    float: right;
+  float: right;
 }
 
 .contact-info-text {
-    color: #475ca6;
+  color: #475ca6;
 }
 
 .contact-no-uk {
-    color: #f5bd48;
-    font-size: 1.6em;
+  color: #f5bd48;
+  font-size: 1.6em;
 }
 
 .schedule-dls {
-    font-size: .9em;
-    text-align: right;
-    color: #475ca6;
+  font-size: .9em;
+  text-align: right;
+  color: #475ca6;
 }
 

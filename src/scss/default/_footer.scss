@@ -1,17 +1,28 @@
 .footer {
-    padding: 2em 0;
-    background: #f3f3f3;
-    border-top: 2px solid #485da7;
-    text-align: left;
+  padding: 2em 0;
+  background: #f3f3f3;
+  border-top: 2px solid #485da7;
+  text-align: left;
 
 }
 .footer-logo img {
-    width: 230px;
-    height: auto;
-    margin-bottom: 1em;
-    display: inline;
+  width: 230px;
+  height: auto;
+  margin-bottom: 1em;
+  display: inline;
 }
 .footer-left p {
+  color: #707073;
+  padding: 0 .5em;
+  line-height: 1.6;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: .85em;
+}
+.footer-middle {
+  p {
     color: #707073;
     padding: 0 .5em;
     line-height: 1.6;
@@ -20,47 +31,36 @@
     font-weight: 400;
     margin-bottom: 0;
     font-size: .85em;
-}
-.footer-middle {
-    p {
-        color: #707073;
-        padding: 0 .5em;
-        line-height: 1.6;
-        font-family: "proxima-nova",sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        margin-bottom: 0;
-        font-size: .85em;
-    }
-    a {
-        font-family: "proxima-nova",sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        color: #475ca6;
-        text-decoration: none;
-    }
+  }
+  a {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #475ca6;
+    text-decoration: none;
+  }
 }
 .footer-right {
-    p {
-        color: #707073;
-        padding: 0 .5em;
-        font-size: .85em;
-        line-height: 1.6;
-        font-family: "proxima-nova",sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        margin-bottom: 0;
-    }
-    img {
-        width: 10px;
-        display: inline;
-        margin-right: .5em;
-    }
-    a {
-        font-family: "proxima-nova",sans-serif;
-        font-style: normal;
-        font-weight: 800;
-        color: #475ca6;
-        text-decoration: none;
-    }
+  p {
+    color: #707073;
+    padding: 0 .5em;
+    font-size: .85em;
+    line-height: 1.6;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  img {
+    width: 10px;
+    display: inline;
+    margin-right: .5em;
+  }
+  a {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    color: #475ca6;
+    text-decoration: none;
+  }
 }
