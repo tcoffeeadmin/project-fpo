@@ -1,5 +1,7 @@
 ---
 layout: default
+header_bg: 'assets/images/hero-bg-img.jpg'
+mobile_bg: 'assets/images/mobile-bg.jpg'
 images:
   - image: 'assets/images/icons/icon-circle-lock.svg'
     title: Fix the costs at today's prices
@@ -26,7 +28,7 @@ services:
 {% include base.html %}
 
 <!-- Hero with form -->
-<div class="hero-section">
+<div class="hero-section" style="background:url({{layout.header_bg}})">
   <section id="qoute" class="pure-g">
     <!---hero-content-section-->
     <div class="pure-g-container" id="quote">
@@ -43,7 +45,7 @@ services:
       </div>
       <!-- enquiry-form -->
       <div class="pure-u-1">
-        <div class="form-bg"></div>
+        <div class="form-bg" style="background:url({{layout.mobile_bg}})"></div>
         {% include {{ page.form | prepend:'forms/' | append:'.html' }} %}
 
         <!-- icon-text-section-right-desktop -->

@@ -404,12 +404,12 @@
   }
 
   .hero-section {
-    background: none;
+    background: none !important;
     height: auto;
   }
 
   .form-bg {
-    background: url(../images/mobile_bg.jpg);
+/*    background: url(../images/mobile-bg.jpg);*/
     background-size: cover;
     height: 600px;
     position: absolute;
