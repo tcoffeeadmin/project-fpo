@@ -3,6 +3,17 @@ layout: secondary
 head:
 title: 'About Us | Funeral Plan Options'
 meta_desc: Our job is to make your life easier 
+about_img: '/assets/images/about-us.jpg'
+services:
+  - icon: '/assets/images/icons/icon-circle-form.svg'
+    title: Tell us a bit about yourself
+    content: First of all, we'll take some very basic information from you.
+  - icon: '/assets/images/icons/icon-circle-pound.svg'
+    title: Get a quote
+    content: Using the information you've given us, we'll provide you with a quote.
+  - icon: '/assets/images/icons/icon-circle-talk.svg'
+    title: Talk to a funeral planner
+    content: We'll contact you to help you choose the perfect plan for you.
 ---
 
 <div class="pure-g about-us">
@@ -32,7 +43,7 @@ meta_desc: Our job is to make your life easier
 
       <!-- About us image -->
       <div class="pure-u-1 pure-u-lg-1-3 pure-u-md-1-3 about-us-image">
-        <img src="/assets/images/about-us.jpg" class="pure-img">
+        <img src="{{page.about_img}}" class="pure-img">
       </div>
       <!--/ About us image -->
     </div>
@@ -43,26 +54,16 @@ meta_desc: Our job is to make your life easier
 <section class="pure-g services" id="service">
   <div class="pure-g-container">
     <h2 class="editable">Our Service</h2>
-    <div class="pure-g include-pad">
+<div class="pure-g include-pad">
+      {% for item in page.services %}
       <div class="pure-u-lg-1-3 pure-u-md-1-3 pure-u-sm-1 services-thumb">
 
-        <img src="/assets/images/icons/icon-circle-form.svg" class="pure-img" alt="">
-        <h3 class="editable">Tell us a bit about yourself</h3>
-        <p class="editable">First of all, we'll take some very basic information from you.</p>
+        <img src="{{item.icon}}" class="pure-img" alt="">
+        <h3 class="editable">{{item.title}}</h3>
+        <p class="editable">{{item.content}}</p>
       </div>
-      <div class="pure-u-lg-1-3 pure-u-sm-1 pure-u-md-1-3 services-thumb">
+      {% endfor %}
 
-
-        <img src="/assets/images/icons/icon-circle-pound.svg" class="pure-img" alt="">
-        <h3 class="editable"> Get a quote</h3>
-        <p class="editable">Using the information you've given us, we'll provide you with a quote.</p>
-      </div>
-      <div class="pure-u-lg-1-3 pure-u-sm-1 pure-u-md-1-3 services-thumb">
-
-        <img src="/assets/images/icons/icon-circle-talk.svg" class="pure-img" alt="">
-        <h3 class="editable"> Talk to a funeral planner</h3>
-        <p class="editable">We'll contact you to help you choose the perfect plan for you.</p>
-      </div>
     </div>
     <span class="editable">&dagger;Sun Life Cost of Dying Report 2013</span>
   </div>
