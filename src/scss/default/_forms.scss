@@ -1,7 +1,7 @@
 .enquiry-form {
   text-align: left;
   background: #fff;
-  padding: .5em 1em 0 1em;
+  padding: 1.875em 1em 0 1.875em;
   -webkit-box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
   -moz-box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
   box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
@@ -11,7 +11,7 @@
     border: none;
     font-size: 1.200em;
     color: #555555;
-
+    padding-top:0;
   }
   label {
     text-align: left;
@@ -131,6 +131,7 @@
   margin: 0;
   width: 100%;
   padding-bottom: 1em;
+  padding-top:0;
 }
 
 
