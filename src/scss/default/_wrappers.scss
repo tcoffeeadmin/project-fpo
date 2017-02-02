@@ -121,7 +121,7 @@
 
 .statistics-content {
   line-height: 1.5;
-  margin-left: 3em;
+  margin-left: 2em;
   p {
     &:first-child {
       font-family: "proxima-nova",sans-serif;
@@ -136,7 +136,8 @@
     color: #555555;
     font-size: 18pt;
     line-height: 26pt;
-
+     margin-top:0; 
+    margin-bottom: 0.25em;
     &:last-child {
       font-family: "proxima-nova",sans-serif;
       font-style: normal;
