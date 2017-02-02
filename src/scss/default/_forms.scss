@@ -7,7 +7,7 @@
   -moz-box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
   box-shadow:  5px 0px 4px rgba(4, 4, 4, 0.47);;
   font-size: 1.1em;
-  height: 410px;
+
 
   legend {
     border: none;
@@ -68,7 +68,7 @@
     -webkit-appearance: none;
     -moz-appearance:    none;
     appearance: none;
-    font-size: 0.875em;
+    font-size: 14pt;
 
   }
   select::-ms-expand {
@@ -77,7 +77,7 @@
 
   input[type="text"] {
     color: #6d6e71;
-    font-size: 0.875em;
+    font-size: 14pt;
     text-transform: capitalize;
     font-family: "proxima-nova",sans-serif;
     font-style: normal;
