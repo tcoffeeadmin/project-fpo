@@ -228,7 +228,9 @@
 .pm-sub-contact{
   float:right; 
 }
-
+/*----------------------------------------------
+---------media-screen--max-width-1200px-----------
+-----------------------------------------------*/
 @media screen and (max-width: $xlg) {
   .statistics-content {
     margin-left: 1.5em;
@@ -277,15 +279,18 @@
   }
 }
 /*----------------------------------------------
----------media-screen--max-width-991px-----------
+---------media-screen--max-width-1024px-----------
 -----------------------------------------------*/
 @media all and (max-width: $lg) and (min-width: $md) {
   .pm-li-styles {
-    margin-left: 1%;
+    margin-left: 5%;
     text-transform: capitalize;
     li {
       margin-right: .2em;
     }
+  }
+  .testimonial-img {
+    margin-top: 33px;
   }
   .statistics-content {
     margin-left: 0;
@@ -373,7 +378,8 @@
     }
   }
   .arrow-left img {
-    left: 2%;
+    left: 7%;
+    margin-top: 25px;
   }
   .plan-desc h2 {
     font-size: 30pt;
@@ -414,58 +420,8 @@
   }
 
 }
-
 /*----------------------------------------------
----------media-screen--max-width-796px-----------
------------------------------------------------*/
-/*@media screen and (max-width: $break-semi-medium) {
-  .pm-li-styles {
-    margin-left: 1%;
-    text-transform: capitalize;
-    li {
-      margin-right: .2em;
-    }
-  }
-
-  .hero-intro p {
-    margin-bottom: 1em;
-    margin-bottom: 1em;
-  }
-
-  .text-wrapper {
-    margin-left: 1em !important;
-  }
-
-  .hero-intro {
-    margin-top: 97px;
-    text-align: center;
-    float: left;
-    padding: 0;
-  }
-
-  .call-now {
-    span {
-      visibility: hidden;
-      border: none;
-    }
-    img {
-      background: #f5bd48;
-      padding: .3em;
-    }
-    a {
-      border: none;
-    }
-  }
-  .text-wrapper {
-    bottom: 0px;
-  }
-
-  .call-now {
-    width: 50px;
-  }
-}*/
-/*----------------------------------------------
----------media-screen--min-width-768px-----------
+---------media-screen--min-width-76px-----------
 -----------------------------------------------*/
 @media screen and (min-width: $md) {
   .hidden-lg{
@@ -477,7 +433,7 @@
 
 
 /*----------------------------------------------
----------media-screen--max-width-768px-----------
+---------media-screen--max-width-767px-----------
 -----------------------------------------------*/
 @media screen and (max-width: $md) {
   .pm-li-styles {
