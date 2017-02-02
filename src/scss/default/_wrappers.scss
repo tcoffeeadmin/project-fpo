@@ -228,7 +228,16 @@
 .pm-sub-contact{
   float:right; 
 }
-/*----------------------------------------------
+@media screen and (min-width: $xxlg) {
+  .enquiry-form{
+    width:667px !important; 
+    padding: 1.875em 1em 6px 1.875em;
+  }
+  .hero-intro {
+    padding: 0 3.56em;
+}
+
+}/*----------------------------------------------
 ---------media-screen--max-width-1200px-----------
 -----------------------------------------------*/
 @media screen and (max-width: $xlg) {
@@ -453,7 +462,7 @@
   .services-thumb p {
     margin-bottom: 85px;
     padding: 0 1em;
-}
+  }
   .testimonial-content {
 
     width:100%;
