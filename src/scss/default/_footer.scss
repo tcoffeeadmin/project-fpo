@@ -11,9 +11,11 @@
   margin-bottom: 1em;
   display: inline;
 }
-.footer-left p {
+.footer-left {
+  width: 350px !important;
+  p {
   color: #707073;
-  padding: 0 .5em;
+  padding: 0 .1em;
   line-height:22pt;
   font-family: "proxima-nova",sans-serif;
   font-style: normal;
@@ -21,10 +23,11 @@
   margin-bottom: 0;
   font-size: 15pt;
 }
+}
 .footer-middle {
   p {
     color: #707073;
-    padding: 0 .5em;
+    padding: 0 .1em;
     line-height:22pt;
     font-family: "proxima-nova",sans-serif;
     font-style: normal;
@@ -43,7 +46,7 @@
 .footer-right {
   p {
     color: #707073;
-    padding: 0 .5em;
+    padding: 0 0 0 3em;
     font-size:13pt;
     line-height: 18pt;
     font-family: "proxima-nova",sans-serif;
