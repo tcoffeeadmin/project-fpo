@@ -228,11 +228,58 @@
 .pm-sub-contact{
   float:right; 
 }
+
+@media screen and (max-width: $xlg) {
+  .statistics-content {
+    margin-left: 1.5em;
+  }
+  .arrow-left img {
+    width: 80px;
+    position: absolute;
+    left: 7%;
+  }
+  .arrow-right {
+    width: 80px;
+    position: absolute;
+    right: 7%;
+    margin-top: -6.2em;
+  }
+  .footer-middle {
+
+    width: 50% !important;
+  }
+  .footer-right {
+    float: left;
+    padding-left: 0;
+    width: 100% !important;
+  }
+  .text-wrapper {
+    font-size: 1.1em;
+
+  }
+  .text-wrapper img {
+
+    width: 45px;
+
+  }
+  .enquiry-form{
+    select{
+      padding: .5em 0.2em;
+    } 
+    input[type="text"]{
+      padding: .5em 0.2em;
+    } 
+  }
+  .testimonial-img img {
+
+    width: auto;
+    height: auto;
+  }
+}
 /*----------------------------------------------
 ---------media-screen--max-width-991px-----------
 -----------------------------------------------*/
-
-@media screen and (max-width: $lg) {
+@media all and (max-width: $lg) and (min-width: $md) {
   .pm-li-styles {
     margin-left: 1%;
     text-transform: capitalize;
@@ -240,13 +287,23 @@
       margin-right: .2em;
     }
   }
-
+  .statistics-content {
+    margin-left: 0;
+  }
+  .statistics-graph img {
+    width: 80%;
+    display: inline;
+  }
+  .statistics-graph {
+    text-align: center;
+  }
   .call-now a {
     padding-bottom: 0.5em;
   }
 
   .hero-intro p {
     margin-bottom: 1em;
+    font-size: 1em;
   }
   .enquiry-form select {
     padding: .5em .25em;
@@ -256,7 +313,108 @@
   .enquiry-form input[type="text"]{
     padding: .5em .25em;
   }
+  .call-now {
+    width:20px;
+    span {
+      visibility: hidden;
+      border: none;
+    }
+    img {
+      background: #f5bd48;
+      padding: .3em;
+    }
+    a {
+      border: none;
+    }
+  }
+  .enquiry-form {
+
+    padding: 0.875em 1em 0 0.875em;
+
+  }
+  .enquiry-form{
+    select{
+      font-size:12pt;
+    } 
+    input[type="text"]{
+      font-size:12pt;
+    } 
+  }
+  .testimonial-content {
+    margin-left: 1.5em;
+    width: 566px;
+  }
+  .text-wrapper {
+    font-size: .85em;
+  }
+  .text-wrapper img {
+    width: 35px;
+  }
+  .enquiry-form button {
+    padding:.5em;
+    height: auto;
+    font-size: 1.100em;
+  }
+  .footer-middle {
+    float: left;
+    padding-left: .5em;
+  }
+  .enquiry-form legend {
+    font-size: 1.100em;
+  }
+
+  .enquiry-form label {
+    margin: 0.15em 0 7px 0;
+  }
+  .testimonial-content  {
+    margin-left: .5em;
+    p{
+      font-size: 17pt;
+    }
+  }
+  .arrow-left img {
+    left: 2%;
+  }
+  .plan-desc h2 {
+    font-size: 30pt;
+  }
+  .plan-statistics h2 {
+    font-size: 30pt;
+  }
+  .services h2{
+    font-size: 30pt;
+  }
+  .plan-content p,.statistics-content p{
+
+    font-size: 14pt;
+  }
+  .services p{
+    padding: 0 .5em;
+    font-size: 14pt;
+  }
+
+  .services-thumb h3{
+    font-size: 20pt;
+  }
+  .footer-left p,.footer-middle p {
+    font-size: 12pt;
+  }
+  .footer-right p {
+
+    font-size: 10pt;
+
+  }
+  .enquiry-form select {
+    height: 38px;
+  }
+  .privacy-info p {
+
+    font-size: 0.7em !important;
+
+  }
+
 }
+
 /*----------------------------------------------
 ---------media-screen--max-width-796px-----------
 -----------------------------------------------*/
@@ -324,6 +482,21 @@
 @media screen and (max-width: $md) {
   .pm-li-styles {
     display: none !important;
+  }
+  .footer-left {
+    width: 100% !important;
+
+  }
+  .footer-middle {
+    width: 100% !important;
+    padding-left:0;
+  }
+  .testimonial-img {
+    margin-top: 0;
+}
+  .testimonial-content {
+
+    width:100%;
   }
   .border-yellow {
     border:none;
@@ -407,8 +580,7 @@
   }
 
   .form-bg {
-    /*    background: url(../images/mobile-bg.jpg);*/
-    background-size: cover;
+    background-size: cover !important;
     height: 600px;
     position: absolute;
     width: 100%;
@@ -480,6 +652,7 @@
 
   .call-now a {
     padding-bottom: 0.2em;
+    border: none;
   }
   .fixed-cta{
     width:100%;
@@ -522,7 +695,7 @@
 
   .form-bg {
     background: url(../images/mobile_bg.jpg);
-    background-size: cover;
+    background-size: cover !important;
     height: 600px;
     position: absolute;
     width: 100%;
