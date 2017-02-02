@@ -493,7 +493,7 @@
   }
   .testimonial-img {
     margin-top: 0;
-}
+  }
   .testimonial-content {
 
     width:100%;
@@ -648,6 +648,7 @@
   }
   .enquiry-form {
     border: 1px solid #f5be4a;
+    padding: 1.875em 1em 0 0.875em;
   }
 
   .call-now a {
@@ -724,6 +725,8 @@
     width: 170px;
 
   }
-
+  .enquiry-form label {
+    margin: 12.5px 0 12.5px 0;
+  }
 
 }
