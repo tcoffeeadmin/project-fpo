@@ -136,7 +136,7 @@
     color: #555555;
     font-size: 18pt;
     line-height: 26pt;
-     margin-top:0; 
+    margin-top:0; 
     margin-bottom: 0.25em;
     &:last-child {
       font-family: "proxima-nova",sans-serif;
@@ -183,7 +183,7 @@
     font-family: "plume",serif;
     font-style: normal;
     font-weight: 700;
-    
+
   }
   p {
     color: #555555;
@@ -192,6 +192,8 @@
     font-family: "proxima-nova",sans-serif;
     font-style: normal;
     font-weight: 400;
+    font-size: 18pt;
+    line-height: 26pt;
   }
 }
 #return-to-top {
@@ -422,7 +424,7 @@
   }
 
   .form-bg {
-/*    background: url(../images/mobile-bg.jpg);*/
+    /*    background: url(../images/mobile-bg.jpg);*/
     background-size: cover;
     height: 600px;
     position: absolute;
