@@ -228,24 +228,6 @@
 .pm-sub-contact{
   float:right; 
 }
-
-/*----------------------------------------------
----------media-screen--min-width-1380px-----------
------------------------------------------------*/
-
-@media screen and (min-width:$break-x-large) {
-
-  .text-wrapper { 
-    top: 50%;  
-  }
-
-  .hero-section {
-    height: 662px;
-    background: url(../images/hero-bg-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 /*----------------------------------------------
 ---------media-screen--max-width-991px-----------
 -----------------------------------------------*/
