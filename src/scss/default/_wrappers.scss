@@ -232,7 +232,7 @@
 ---------media-screen--max-width-991px-----------
 -----------------------------------------------*/
 
-@media screen and (max-width: $break-medium) {
+@media screen and (max-width: $lg) {
   .pm-li-styles {
     margin-left: 1%;
     text-transform: capitalize;
@@ -260,7 +260,7 @@
 /*----------------------------------------------
 ---------media-screen--max-width-796px-----------
 -----------------------------------------------*/
-@media screen and (max-width: $break-semi-medium) {
+/*@media screen and (max-width: $break-semi-medium) {
   .pm-li-styles {
     margin-left: 1%;
     text-transform: capitalize;
@@ -305,11 +305,11 @@
   .call-now {
     width: 50px;
   }
-}
+}*/
 /*----------------------------------------------
 ---------media-screen--min-width-768px-----------
 -----------------------------------------------*/
-@media screen and (min-width: $break-small) {
+@media screen and (min-width: $md) {
   .hidden-lg{
     display:none !important; 
   }
@@ -321,7 +321,7 @@
 /*----------------------------------------------
 ---------media-screen--max-width-768px-----------
 -----------------------------------------------*/
-@media screen and (max-width: $break-small) {
+@media screen and (max-width: $md) {
   .pm-li-styles {
     display: none !important;
   }
@@ -515,7 +515,7 @@
 ---------media-screen--max-width-412px-----------
 -----------------------------------------------*/
 
-@media screen and (max-width: $break-xs) {
+@media screen and (max-width: $sm) {
   .testimonial-img {
     margin-top: 2em;
   }
