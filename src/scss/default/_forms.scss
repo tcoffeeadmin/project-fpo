@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 700;
     color: #485da7;
-
+    margin:0.15em 0 0.750em 0
   }
   input[type="text"] {
     border-color: #6d6e71 !important;
@@ -27,6 +27,7 @@
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     box-shadow: none;
+    margin:0px;
   }
 }
 [type="email"], [type="tel"], select {
