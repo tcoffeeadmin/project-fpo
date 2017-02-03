@@ -1,18 +1,23 @@
-# Site settings
-version: 3.0.3
-permalink: pretty
-#baseurl: /_site
-
-# Where things are
-#source:       ./_site
-#destination:  ./_site/pages
-#
-
-exclude: ["node_modules", "gulpfile.js", "package.json", "src"]
-
+---
+title: Project Fpo
+timezone: UTC
 collections:
   business-finance:
+    title: Business Finance
     output: true
+    permalink: collection/:path/
     name: Business Finance
-    permalink: :collection/:path/
     desktop_nav_label: Example
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+version: 3.0.3
+permalink: pretty
+exclude:
+- node_modules
+- gulpfile.js
+- package.json
+- src
